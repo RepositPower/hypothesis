@@ -1,4 +1,6 @@
 RELEASE_TYPE: patch
 
-This release is a small internal refactoring which should have little user
-visible impact.
+This release changes how Hypothesis deletes data when shrinking in order to
+better handle deletion of large numbers of contiguous sequences. Most tests
+should see little change, but this will hopefully provide a significant
+speed up for :doc:`stateful testing <stateful>`.
