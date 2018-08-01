@@ -115,10 +115,10 @@ class Shrinker(object):
         return self.incorporate(value)
 
     def short_circuit(self):
-        raise NotImplementedError()
+        return False
 
     def preamble(self):
-        raise NotImplementedError()
+        pass
 
     def left_is_better(self, left, right):
         raise NotImplementedError()
